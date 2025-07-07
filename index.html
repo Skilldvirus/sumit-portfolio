@@ -5,28 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sumit Khanna | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: linear-gradient(to right, #f0f4f8, #ffffff); color: #333; }
-    header { background: #1e293b; color: #fff; padding: 2rem 1rem; text-align: center; }
-    header h1 { font-size: 2.5rem; }
-    nav { margin-top: 1rem; }
-    nav a { margin: 0 1rem; color: #93c5fd; text-decoration: none; font-weight: 600; }
-    nav a:hover { color: #38bdf8; }
-    section { padding: 3rem 1rem; max-width: 1000px; margin: auto; }
-    h2 { font-size: 2rem; color: #1e40af; margin-bottom: 1rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 0.5rem; }
-    ul { list-style: none; margin-top: 1rem; }
-    li { margin-bottom: 0.5rem; }
-    .job, .project { background: #fff; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-    footer { text-align: center; padding: 2rem 1rem; background: #1e293b; color: #cbd5e1; }
-    .button { background: #3b82f6; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 6px; display: inline-block; margin-top: 1rem; transition: background 0.3s ease; }
+    body { font-family: 'Inter', sans-serif; background: #f3f4f6; color: #333; scroll-behavior: smooth; }
+    header { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: #fff; padding: 4rem 1rem; text-align: center; position: relative; }
+    header h1 { font-size: 3rem; }
+    header p span.typed { color: #fbbf24; font-weight: 600; }
+    nav { margin-top: 2rem; }
+    nav a { margin: 0 1rem; color: #e0f2fe; text-decoration: none; font-weight: 600; }
+    nav a:hover { color: #fff; text-decoration: underline; }
+    section { padding: 4rem 1rem; max-width: 1000px; margin: auto; }
+    h2 { font-size: 2.5rem; color: #1e3a8a; margin-bottom: 1.5rem; border-left: 6px solid #3b82f6; padding-left: 1rem; }
+    .job, .project { background: white; border-radius: 10px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 8px 24px rgba(0,0,0,0.05); transition: transform 0.3s; }
+    .job:hover, .project:hover { transform: scale(1.02); }
+    ul { list-style: none; padding-left: 1rem; }
+    li::before { content: '\2022'; color: #3b82f6; font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
+    footer { background: #1e3a8a; color: #fff; text-align: center; padding: 2rem; margin-top: 3rem; }
+    .button { background: #3b82f6; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 6px; cursor: pointer; transition: background 0.3s ease; display: inline-block; text-decoration: none; }
     .button:hover { background: #2563eb; }
+    a { color: #2563eb; }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      h2 { font-size: 1.75rem; }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Sumit Khanna</h1>
-    <p>Senior Software Engineer | Angular + React | AWS Certified</p>
+    <p><span class="typed"></span></p>
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
@@ -103,5 +111,19 @@
   <footer>
     <p>&copy; 2025 Sumit Khanna. Built with HTML, CSS & Passion.</p>
   </footer>
+
+  <script>
+    var typed = new Typed(".typed", {
+      strings: [
+        "Senior Software Engineer",
+        "Angular & React Developer",
+        "AWS Certified Cloud Enthusiast",
+        "UI/UX Optimizer & Code Architect"
+      ],
+      typeSpeed: 60,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
 </body>
 </html>
