@@ -1,44 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sumit Khanna | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumit Khanna | Full Stack Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background: #f3f4f6; color: #333; scroll-behavior: smooth; }
-    header { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: #fff; padding: 4rem 1rem; text-align: center; position: relative; }
-    header h1 { font-size: 3rem; }
-    header p span.typed { color: #fbbf24; font-weight: 600; }
-    nav { margin-top: 2rem; }
-    nav a { margin: 0 1rem; color: #e0f2fe; text-decoration: none; font-weight: 600; }
-    nav a:hover { color: #fff; text-decoration: underline; }
-    section { padding: 4rem 1rem; max-width: 1000px; margin: auto; }
-    h2 { font-size: 2.5rem; color: #1e3a8a; margin-bottom: 1.5rem; border-left: 6px solid #3b82f6; padding-left: 1rem; }
-    .job, .project { background: white; border-radius: 10px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 8px 24px rgba(0,0,0,0.05); transition: transform 0.3s; }
-    .job:hover, .project:hover { transform: scale(1.02); }
-    ul { list-style: none; padding-left: 1rem; }
-    li::before { content: '\2022'; color: #3b82f6; font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
-    footer { background: #1e3a8a; color: #fff; text-align: center; padding: 2rem; margin-top: 3rem; }
-    .button { background: #3b82f6; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 6px; cursor: pointer; transition: background 0.3s ease; display: inline-block; text-decoration: none; }
-    .button:hover { background: #2563eb; }
-    a { color: #2563eb; }
-    @media (max-width: 768px) {
-      header h1 { font-size: 2rem; }
-      h2 { font-size: 1.75rem; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      color: #1f2937;
+    }
+    header {
+      background: linear-gradient(to right, #2563eb, #1e40af);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.25rem;
+    }
+    nav {
+      margin-top: 2rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #3b82f6;
+      padding-left: 1rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background: #1e3a8a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .contact-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    .contact-card i {
+      font-size: 1.5rem;
+      color: #3b82f6;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Sumit Khanna</h1>
-    <p><span class="typed"></span></p>
+    <p>Frontend Specialist | Angular + React | AWS Certified</p>
     <nav>
       <a href="#about">About</a>
-      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -46,84 +107,82 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I'm a frontend-focused software engineer with 7.5+ years of experience in Angular, React, TypeScript, and cloud integration. I specialize in building high-performance UIs and scalable web apps. Recently AWS Certified, I'm expanding into full-stack and cloud-native architecture.</p>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="job">
-      <strong>Zensar Technologies</strong> – Sr. Software Engineer (2022–Present)
-      <ul>
-        <li>WST Dashboard: Built a real-time dashboard using React.js + Redux + MUI</li>
-        <li>FIS-NIP: Developed IPO platform using Angular 18, Ag-Grid, NGRX</li>
-        <li>SalesConnect: Created responsive LWC components in Salesforce</li>
-      </ul>
-    </div>
-    <div class="job">
-      <strong>Cognizant</strong> – Associate Projects (2021–2022)
-      <ul>
-        <li>Built reusable Angular modules using PrimeNG, lazy loading, and reactive forms</li>
-      </ul>
-    </div>
-    <div class="job">
-      <strong>Coforge</strong> – Angular Developer (2018–2021)
-      <ul>
-        <li>Migrated Silverlight apps to Angular 6/7 using DevEx controls</li>
-        <li>Maintained React dashboard apps integrated with SharePoint</li>
-      </ul>
-    </div>
+    <p>I’m a frontend-focused full stack developer with 7.5+ years of experience building enterprise-grade web applications using Angular, React, and AWS services. I'm passionate about clean code, performance, and cloud-native architecture.</p>
   </section>
 
   <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Frontend:</strong> Angular (v4–19), React, HTML, CSS, Bootstrap, Material UI</li>
-      <li><strong>State Management:</strong> NGRX, Redux</li>
-      <li><strong>Cloud & DevOps:</strong> AWS (S3, Lambda, CloudFront, Cognito), GitHub Actions</li>
-      <li><strong>Testing:</strong> Jasmine, Karma</li>
-      <li><strong>Tools:</strong> Git, Bitbucket, DevExtreme, PrimeNG, AgGrid, Salesforce LWC</li>
-    </ul>
+    <h2>Technical Skills</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Frontend</h3><p>Angular (v4–19), React, HTML, CSS, Bootstrap, Material UI</p></div>
+      <div class="card"><h3>State Management</h3><p>NGRX, Redux</p></div>
+      <div class="card"><h3>Cloud & DevOps</h3><p>AWS (S3, Lambda, CloudFront, Cognito), GitHub Actions</p></div>
+      <div class="card"><h3>Testing</h3><p>Jasmine, Karma</p></div>
+      <div class="card"><h3>Tools</h3><p>Git, Bitbucket, DevExtreme, PrimeNG, AgGrid, Salesforce LWC</p></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Zensar Technologies</h3>
+        <p><strong>Sr. Software Engineer</strong> (2022–Present)</p>
+        <ul>
+          <li>Built IPO Dashboard using Angular 18, NGRX, AgGrid</li>
+          <li>Developed Salesforce LWC components for SalesConnect</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Cognizant</h3>
+        <p><strong>Associate Projects</strong> (2021–2022)</p>
+        <ul>
+          <li>Developed Angular modules using PrimeNG and RxJS</li>
+          <li>Focused on lazy loading, routing and testing</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Coforge</h3>
+        <p><strong>Angular Developer</strong> (2018–2021)</p>
+        <ul>
+          <li>Modernized legacy Silverlight apps into Angular 6/7</li>
+          <li>Built React dashboards with SharePoint integration</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <strong>Task Manager App</strong>
-      <p>Angular frontend with Node.js backend. Deployed on AWS S3 + Lambda. Includes auth via Cognito.</p>
-    </div>
-    <div class="project">
-      <strong>IPO Broking System</strong>
-      <p>Large-scale app for financial services using Angular 18, Ag-Grid, and reactive state management.</p>
-    </div>
-    <div class="project">
-      <strong>React Admin Dashboard</strong>
-      <p>Real-time financial insights using Redux and Material UI, with API integrations and memoization techniques.</p>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Task Manager App</h3>
+        <p>Angular frontend + Node.js backend, secured with Cognito, hosted on AWS S3 & Lambda</p>
+      </div>
+      <div class="card">
+        <h3>IPO Broking Platform</h3>
+        <p>Enterprise trading interface built with Angular 18, AgGrid, and real-time APIs</p>
+      </div>
+      <div class="card">
+        <h3>React Admin Dashboard</h3>
+        <p>Interactive dashboard with Redux, MUI, and performance tuning using memoization</p>
+      </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:sumit.r.khanna@gmail.com">sumit.r.khanna@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sumit-khanna-888702116/" target="_blank">linkedin.com/in/sumit-khanna</a></p>
-    <a class="button" href="mailto:sumit.r.khanna@gmail.com">Get in Touch</a>
+    <h2>Get In Touch</h2>
+    <p>Open to new opportunities, freelance work, or tech collaborations.</p>
+    <div class="contact-grid">
+      <div class="contact-card"><i class="fas fa-phone"></i> <span>+91 9473592501</span></div>
+      <div class="contact-card"><i class="fab fa-whatsapp"></i> <span>+91 9473592501</span></div>
+      <div class="contact-card"><i class="fas fa-envelope"></i> <span>sumit.r.khanna@gmail.com</span></div>
+      <div class="contact-card"><i class="fab fa-linkedin"></i> <span>linkedin.com/in/sumit-khanna-888702116</span></div>
+      <div class="contact-card"><i class="fab fa-github"></i> <span>github.com/sumitkhanna</span></div>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Sumit Khanna. Built with HTML, CSS & Passion.</p>
+    &copy; 2025 Sumit Khanna — Built with HTML, CSS, and 💙
   </footer>
-
-  <script>
-    var typed = new Typed(".typed", {
-      strings: [
-        "Senior Software Engineer",
-        "Angular & React Developer",
-        "AWS Certified Cloud Enthusiast",
-        "UI/UX Optimizer & Code Architect"
-      ],
-      typeSpeed: 60,
-      backSpeed: 30,
-      loop: true
-    });
-  </script>
 </body>
 </html>
