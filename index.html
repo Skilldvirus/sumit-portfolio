@@ -4,22 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sumit Khanna | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background-color: #f9f9f9; }
-    header { background-color: #232f3e; color: white; padding: 1rem 2rem; }
-    nav a { color: white; margin-right: 1rem; text-decoration: none; }
-    section { padding: 2rem; max-width: 900px; margin: auto; }
-    h1, h2 { color: #333; }
-    .experience, .skills, .projects { margin-bottom: 2rem; }
-    .job { margin-bottom: 1rem; }
-    footer { background-color: #232f3e; color: white; text-align: center; padding: 1rem; }
-    .button { display: inline-block; background-color: #ff9900; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 4px; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: linear-gradient(to right, #f0f4f8, #ffffff); color: #333; }
+    header { background: #1e293b; color: #fff; padding: 2rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; }
+    nav { margin-top: 1rem; }
+    nav a { margin: 0 1rem; color: #93c5fd; text-decoration: none; font-weight: 600; }
+    nav a:hover { color: #38bdf8; }
+    section { padding: 3rem 1rem; max-width: 1000px; margin: auto; }
+    h2 { font-size: 2rem; color: #1e40af; margin-bottom: 1rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 0.5rem; }
+    ul { list-style: none; margin-top: 1rem; }
+    li { margin-bottom: 0.5rem; }
+    .job, .project { background: #fff; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    footer { text-align: center; padding: 2rem 1rem; background: #1e293b; color: #cbd5e1; }
+    .button { background: #3b82f6; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 6px; display: inline-block; margin-top: 1rem; transition: background 0.3s ease; }
+    .button:hover { background: #2563eb; }
   </style>
 </head>
 <body>
   <header>
     <h1>Sumit Khanna</h1>
-    <p>Senior Software Engineer | Frontend Specialist | AWS Certified</p>
+    <p>Senior Software Engineer | Angular + React | AWS Certified</p>
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
@@ -31,64 +38,70 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Results-driven front-end developer with 7.5+ years of experience in Angular (v4–19), React, and cloud fundamentals. Passionate about building scalable, accessible, and high-performance web apps. Recently AWS Cloud Practitioner certified and exploring cloud-native full-stack development.</p>
+    <p>I'm a frontend-focused software engineer with 7.5+ years of experience in Angular, React, TypeScript, and cloud integration. I specialize in building high-performance UIs and scalable web apps. Recently AWS Certified, I'm expanding into full-stack and cloud-native architecture.</p>
   </section>
 
-  <section id="experience" class="experience">
-    <h2>Professional Experience</h2>
+  <section id="experience">
+    <h2>Experience</h2>
     <div class="job">
-      <strong>Zensar Technologies</strong> – Senior Software Engineer (2022–Present)<br>
-      <em>Angular 18/19, Ag-Grid, NGRX, Salesforce LWC</em>
+      <strong>Zensar Technologies</strong> – Sr. Software Engineer (2022–Present)
       <ul>
-        <li>Built IPO broking platform with Angular and NGRX</li>
-        <li>Created accessible components and used Bitbucket for versioning</li>
+        <li>WST Dashboard: Built a real-time dashboard using React.js + Redux + MUI</li>
+        <li>FIS-NIP: Developed IPO platform using Angular 18, Ag-Grid, NGRX</li>
+        <li>SalesConnect: Created responsive LWC components in Salesforce</li>
       </ul>
     </div>
     <div class="job">
-      <strong>Cognizant</strong> – Associate-Projects (2021–2022)<br>
-      <em>Angular 8/10, PrimeNG, Reactive Forms</em>
+      <strong>Cognizant</strong> – Associate Projects (2021–2022)
       <ul>
-        <li>Developed complex forms, lazy-loading features, unit testing</li>
+        <li>Built reusable Angular modules using PrimeNG, lazy loading, and reactive forms</li>
       </ul>
     </div>
     <div class="job">
-      <strong>Coforge</strong> – Angular Developer (2018–2021)<br>
-      <em>Angular 6/7, React, SharePoint, DevEx</em>
+      <strong>Coforge</strong> – Angular Developer (2018–2021)
       <ul>
-        <li>Migrated Silverlight to Angular, worked on React dashboards</li>
+        <li>Migrated Silverlight apps to Angular 6/7 using DevEx controls</li>
+        <li>Maintained React dashboard apps integrated with SharePoint</li>
       </ul>
     </div>
   </section>
 
-  <section id="skills" class="skills">
+  <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Frontend: Angular, React, HTML5, CSS3, Bootstrap, PrimeNG, AgGrid</li>
-      <li>State Management: NGRX, Redux</li>
-      <li>Testing: Jasmine, Karma</li>
-      <li>Cloud: AWS (S3, CloudFront, Cognito, API Gateway)</li>
-      <li>Tools: Git, Bitbucket, DevExtreme, Salesforce LWC</li>
+      <li><strong>Frontend:</strong> Angular (v4–19), React, HTML, CSS, Bootstrap, Material UI</li>
+      <li><strong>State Management:</strong> NGRX, Redux</li>
+      <li><strong>Cloud & DevOps:</strong> AWS (S3, Lambda, CloudFront, Cognito), GitHub Actions</li>
+      <li><strong>Testing:</strong> Jasmine, Karma</li>
+      <li><strong>Tools:</strong> Git, Bitbucket, DevExtreme, PrimeNG, AgGrid, Salesforce LWC</li>
     </ul>
   </section>
 
-  <section id="projects" class="projects">
+  <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>Task Manager App</strong>: Angular + Node.js + AWS (in progress)</li>
-      <li><strong>IPO Broking System</strong>: Large-scale frontend for financial sector</li>
-      <li><strong>React Admin Dashboard</strong>: Table sorting, SharePoint integration</li>
-    </ul>
+    <div class="project">
+      <strong>Task Manager App</strong>
+      <p>Angular frontend with Node.js backend. Deployed on AWS S3 + Lambda. Includes auth via Cognito.</p>
+    </div>
+    <div class="project">
+      <strong>IPO Broking System</strong>
+      <p>Large-scale app for financial services using Angular 18, Ag-Grid, and reactive state management.</p>
+    </div>
+    <div class="project">
+      <strong>React Admin Dashboard</strong>
+      <p>Real-time financial insights using Redux and Material UI, with API integrations and memoization techniques.</p>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:sumit.r.khanna@gmail.com">sumit.r.khanna@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sumit-khanna-888702116/" target="_blank">Profile</a></p>
-    <p><a class="button" href="mailto:sumit.r.khanna@gmail.com">Hire Me</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sumit-khanna-888702116/" target="_blank">linkedin.com/in/sumit-khanna</a></p>
+    <a class="button" href="mailto:sumit.r.khanna@gmail.com">Get in Touch</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 Sumit Khanna. All rights reserved.</p>
+    <p>&copy; 2025 Sumit Khanna. Built with HTML, CSS & Passion.</p>
   </footer>
 </body>
 </html>
